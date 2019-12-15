@@ -10,6 +10,7 @@ namespace WaveSabreCore
 		virtual ~Comb();
 
 		void SetBufferSize(int size);
+		int GetBufferSize() const;
 		float Process(float inp);
 		void SetDamp(float val);
 		float GetDamp();

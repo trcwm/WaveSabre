@@ -120,8 +120,11 @@ namespace WaveSabreCore
 		{
 			combLeft[i].SetFeedback(roomSize1);
 			combRight[i].SetFeedback(roomSize1);
-			combLeft[i].SetDamp(damp1);
-			combRight[i].SetDamp(damp1);
+
+			float compensatedDamp = Helpers::PowF(damp1, static_cast<float>(combLeft[i].GetBufferSize()) / static_cast<float>(combLeft[0].GetBufferSize()));
+
+			combLeft[i].SetDamp(compensatedDamp);
+			combRight[i].SetDamp(compensatedDamp);
 		}
 	}
 

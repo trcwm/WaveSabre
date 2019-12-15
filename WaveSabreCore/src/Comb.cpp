@@ -29,6 +29,11 @@ namespace WaveSabreCore
 		if (oldBuffer) delete[] oldBuffer;
 	}
 
+	int Comb::GetBufferSize() const
+	{
+		return bufferSize;
+	}
+
 	void Comb::SetDamp(float val)
 	{
 		damp1 = val;
