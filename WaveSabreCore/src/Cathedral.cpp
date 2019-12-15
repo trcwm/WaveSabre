@@ -121,6 +121,9 @@ namespace WaveSabreCore
 			combLeft[i].SetFeedback(roomSize1);
 			combRight[i].SetFeedback(roomSize1);
 
+			// make sure the damping coefficient per sample is the same for each
+			// comb filter, so we avoid one comb filter dominating the others in
+			// the reverb tail.
 			float compensatedDamp = Helpers::PowF(damp1, static_cast<float>(combLeft[i].GetBufferSize()) / static_cast<float>(combLeft[0].GetBufferSize()));
 
 			combLeft[i].SetDamp(compensatedDamp);
