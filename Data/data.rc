@@ -1,4 +1,4 @@
-﻿// Microsoft Visual C++ generated resource script.
+// Microsoft Visual C++ generated resource script.
 //
 #include "resource.h"
 
@@ -16,7 +16,7 @@
 // Neutral (Default) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
-LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+//LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
 
 /////////////////////////////////////////////////////////////////////////////
 //
